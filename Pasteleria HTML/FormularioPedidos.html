@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Formulario Pedido</title>
+</head>
+<body>
+
+    <!--FORMULARIO-->
+    <div class="content">
+        <div class="contact-wrapper">
+            <h3 class="titulo">Toma de Pedido</h3>
+            <div class="contact-form">
+                <form action="formulario.js" method="post">
+                    <div>
+                        <label for="fullname">Nombre Del Comprador:</label>
+                        <input type="text" name="fullname" id="fullname" class="datos" required>
+                    </div>
+                    <div>
+                        <label for="direccion">Direccion De Entrega:</label>
+                        <input type="text" name="direccion" id="direccion" class="datos" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo Electronico del Comprador:</label>
+                        <input type="email" name="email" id="email" class="datos" required>
+                    </div>
+                    <div>
+                        <label for="telefono">telefono de contacto:</label>
+                        <input type="tel" name="telefono" id="telefono" class="datos" required>
+                    </div>
+                    <div class="block">
+                        <label for="descripcion">Da una descripcion detallada sobre el pastel que deseas (Recuerda que puedes combinar sabores):</label>
+                        <textarea name="descripcion" id="descripcion" rows="3"></textarea>
+                    </div>
+
+                    <h2 class="titulo block">sabores</h2>
+                    <div>
+                        <input type="checkbox" name="pastel-Zanahoria" id="Zanahoria" value="pastel-Zanahoria">
+                        <label for="Zanahoria">   Zanahoria</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="pastel-Skittles" id="Skittles" value="pastel-Skittles">
+                        <label for="Skittles">    Skittles</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="pastel-Naranja" id="Naranja" value="pastel-Naranja">
+                        <label for="Naranja">      Naranja</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="pastel-Elote" id="Elote" value="pastel-Elote">
+                        <label for="Elote">        Elote</label>
+                    </div>
+                    <h3 class="titulo block">decoraciones</h3>
+                    <div>
+                        <input type="checkbox" name="vela letra" id="geometrica">
+                        <label for="geometrica">vela letra</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="vela personaje" id="drip-cake">
+                        <label for="drip-cake">vela personaje</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="vela magica" id="tradicional">
+                        <label for="tradicional">vela magica</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="decoracion-vela-numerica" id="numerica">
+                        <label for="numerica">vela numerica</label>
+                    </div>
+
+                    <div>
+                        <button type="submit">hacer pedido</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</html>
